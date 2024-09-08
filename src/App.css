@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.profile-hover:hover > .icon-hover{
+  opacity: 0.45;
+  border: 2px solid whitesmoke;
+}
+
+.profile-hover:hover > .text-container{
+  opacity: 1;
+  font-weight: semi-bold;
+  overflow-wrap: break-word;
+}
