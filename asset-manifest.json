@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.0e2b24dd.css",
-    "main.js": "/react-gh-pages/static/js/main.cee59a01.js",
-    "static/js/453.209d4f9d.chunk.js": "/react-gh-pages/static/js/453.209d4f9d.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.0e2b24dd.css.map": "/react-gh-pages/static/css/main.0e2b24dd.css.map",
-    "main.cee59a01.js.map": "/react-gh-pages/static/js/main.cee59a01.js.map",
-    "453.209d4f9d.chunk.js.map": "/react-gh-pages/static/js/453.209d4f9d.chunk.js.map"
+    "main.css": "/TiffanyZhu/static/css/main.0e2b24dd.css",
+    "main.js": "/TiffanyZhu/static/js/main.7dfb8f73.js",
+    "static/js/453.209d4f9d.chunk.js": "/TiffanyZhu/static/js/453.209d4f9d.chunk.js",
+    "index.html": "/TiffanyZhu/index.html",
+    "main.0e2b24dd.css.map": "/TiffanyZhu/static/css/main.0e2b24dd.css.map",
+    "main.7dfb8f73.js.map": "/TiffanyZhu/static/js/main.7dfb8f73.js.map",
+    "453.209d4f9d.chunk.js.map": "/TiffanyZhu/static/js/453.209d4f9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e2b24dd.css",
-    "static/js/main.cee59a01.js"
+    "static/js/main.7dfb8f73.js"
   ]
 }
