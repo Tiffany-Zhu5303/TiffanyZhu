@@ -1,3 +1,7 @@
+# Welcome to my personal web app!
+
+Check out my site [here](https://tiffany-zhu5303.github.io/TiffanyZhu/#experiences-top) or follow the steps below to run my app locally! 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
