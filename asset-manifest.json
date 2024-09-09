@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/TiffanyZhu/static/css/main.c99fada2.css",
-    "main.js": "/TiffanyZhu/static/js/main.8608d99b.js",
+    "main.css": "/TiffanyZhu/static/css/main.fb9b28e2.css",
+    "main.js": "/TiffanyZhu/static/js/main.0c7800d7.js",
     "static/js/453.209d4f9d.chunk.js": "/TiffanyZhu/static/js/453.209d4f9d.chunk.js",
     "static/media/Resume.jpg": "/TiffanyZhu/static/media/Resume.b0c5320b161aa4063f7c.jpg",
     "static/media/resume-preview.png": "/TiffanyZhu/static/media/resume-preview.b6379adee5f2f685b276.png",
     "static/media/LinkedinProfile.jpeg": "/TiffanyZhu/static/media/LinkedinProfile.c0ed401c1b1761326243.jpeg",
     "index.html": "/TiffanyZhu/index.html",
-    "main.c99fada2.css.map": "/TiffanyZhu/static/css/main.c99fada2.css.map",
-    "main.8608d99b.js.map": "/TiffanyZhu/static/js/main.8608d99b.js.map",
+    "main.fb9b28e2.css.map": "/TiffanyZhu/static/css/main.fb9b28e2.css.map",
+    "main.0c7800d7.js.map": "/TiffanyZhu/static/js/main.0c7800d7.js.map",
     "453.209d4f9d.chunk.js.map": "/TiffanyZhu/static/js/453.209d4f9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c99fada2.css",
-    "static/js/main.8608d99b.js"
+    "static/css/main.fb9b28e2.css",
+    "static/js/main.0c7800d7.js"
   ]
 }
