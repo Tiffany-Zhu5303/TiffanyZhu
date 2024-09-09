@@ -12,7 +12,6 @@ body {
 }
 
 #hide-scroll {
-  overflow-y: scroll; /* Ensures scroll is always available */
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none;  /* For Internet Explorer 10+ */
   scrollbar-color: transparent transparent; /* For Chrome, Edge, and Safari */

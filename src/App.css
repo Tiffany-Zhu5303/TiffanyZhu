@@ -16,3 +16,56 @@
 .no-scrollbar {
   scrollbar-width: none;
 }
+
+/* tablet, laptop, desktop monitors */
+@media screen and (min-width: 1280){
+  .intro-container {
+    display:flex;
+    flex: column;
+  }
+  .profile-pic {
+    width: 1000px;
+    height: 1000px;
+  }
+}
+
+/* mobile devices */
+@media screen and (max-width: 425px) and (max-height: 650px){
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    scale: 0.9;
+  }
+
+  .resume-img {
+    width: 100vw;
+  }
+}
+
+/* tablets */
+@media screen and (max-height: 900px) and (min-height: 650px){
+  .resume-page {
+    height: 100vh;
+  }
+
+  .resume-img {
+    width: 90vw;
+  }
+
+  .resume-page > .back-to-top {
+    display: none;
+  }
+
+  .experience-page {
+    height:max-content;
+  }
+
+  .back-to-top-bttn {
+    text-wrap: nowrap;
+  }
+  
+}

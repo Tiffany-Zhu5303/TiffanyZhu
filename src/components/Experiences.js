@@ -68,7 +68,7 @@ function Experiences({isOpen, onClose}) {
     ];
 
     return (
-        <div className='page-scrollbar bg-linen w-full h-screen absolute inset-0 overflow-x-hidden'>
+        <div className='experience-page bg-linen w-full h-max absolute inset-0 overflow-x-hidden'>
             <IoClose onClick={onClose} className='cursor-pointer size-12' id='experiences-top'/>
             <div className='w-full flex justify-center'>
                 <h1 className='text-4xl font-bold text-pomp-and-power'>My Experiences!</h1>
@@ -91,10 +91,10 @@ function Experiences({isOpen, onClose}) {
                         </div>
                     </div>
                 ))}
-                <div className='grid grid-cols-9'>
+                <div className='grid grid-cols-9 back-to-top'>
                     <div className='col-start-7 col-span-2 flex items-center justify-end'>
-                    <a href='#experiences-top' className='text-lg bg-pomp-and-power text-white px-4 py-2 rounded-lg my-8'>Back to top</a>
-                    <a href='#experiences-top'><FaHandPointUp className='text-4xl text-pomp-and-power'/></a>
+                        <a href='#experiences-top' className='back-to-top-bttn text-lg bg-pomp-and-power text-white px-4 py-2 rounded-lg my-8'>Back to top</a>
+                        <a href='#experiences-top'><FaHandPointUp className='text-4xl text-pomp-and-power'/></a>
                     </div>
                 </div>
             </div>
