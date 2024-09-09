@@ -9,8 +9,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FFF5EB;
-  color: #1C1F33;
+}
+
+#hide-scroll {
+  overflow-y: scroll; /* Ensures scroll is always available */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer 10+ */
+  scrollbar-color: transparent transparent; /* For Chrome, Edge, and Safari */
+}
+
+#hide-scroll::-webkit-scrollbar {
+  width: 0px; /* Removes scrollbar width */
+  background: transparent; /* Ensures no scrollbar background */
 }
 
 code {
