@@ -46,7 +46,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='size-up size-down flex flex-col items-center bg-seashell w-full'>
+      <div className='size-up size-down flex flex-col items-center'>
           <h1 className='text-4xl font-bold text-pomp-and-power py-8'>My Resume 📄</h1>
           <a href='#resume-top'>
             <div className='resume-holder relative flex flex-col justify-end border-2' onClick={openResume}>
