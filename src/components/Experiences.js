@@ -12,9 +12,8 @@ function Experiences({isOpen, onClose}) {
             'Dates': 'October 2023 - Present',
             'Position': 'Japanese Peer Tutor',
             'Description': [
-                'Provided individualized instruction in Japanese grammar, conversation, and reading comprehension to students of varying levels (beginner to intermediate). ',
-                'Assessed student progress and offered feedback to reinforce understanding in weekly 1-3 hour sessions.',
-                'Developed personalized lesson plans based on student needs and learning styles. '
+                'Foster a supportive learning environment that empowers students to achieve their goals and deliver individualized instruction in grammar, conversation, and reading comprehension to students of levels from beginner to advanced.',
+                'Conduct engaging weekly sessions lasting 1-3 hours, where students can actively practice their skills and receive personalized feedback to reinforce their understanding and boost their confidence and progress in Japanese language acquisition.'
             ],
             'Personal Note': 'I love helping students learn Japanese and sharing my passion for the language and culture! I continue to review and practice my Japanese through my interactions with the students and the materials I use to teach them. I enjoy seeing the progress that the students make and the confidence they gain in their Japanese abilities.'
         },
@@ -24,9 +23,8 @@ function Experiences({isOpen, onClose}) {
             'Dates': 'July 2024 - August 2024',
             'Position': 'Web Development Intern',
             'Description': [
-                'Developed and deployed a wiki/marketplace Next.js application on Vercel in 6 weeks with a team of 3 interns.',
-                'Leveraged Tailwind CSS for styling, Prisma ORM for database management, and Firebase Authentication for user management. Implemented a dynamic dropdown navbar mega menu to enhance user experience.',
-                'Contributed to full-stack development by designing the database schema using ER diagrams, researching web scraping functionalities with Cheerio and Axios, and translating wireframes into UI components.'
+                'Developed a Next.js wiki and market webapp deployed on Vercel, delivering a user-friendly platform for spread of environmental awareness, knowledge, and eco-friendly products.',
+                'Leveraged Tailwind CSS for styling, Prisma ORM for database management, Firebase Authentication for user management, and implemented over 20 wireframes into a functional UX and visually appealing UI.'
             ],
             'Personal Note': 'I enjoyed working with my team to create a functional application that met the needs and requirements. It was interesting to learn more about the process of planning and developing a marketplace/wiki application on a larger scale. I picked up new skills and knowledge in web development and software engineering, such as Tailwind CSS and Next.js, that I can apply to future projects.'
         },
@@ -36,9 +34,8 @@ function Experiences({isOpen, onClose}) {
             'Dates': 'January 2023',
             'Position': 'Software Engineer Intern',
             'Description': [
-                'Collaborated with team of 5 to develop and deploy a React web application in 3 weeks. The app allows users to create personalized events and RSVP to events created by others.',
-                'Executed API requests to retrieve and post data from a MySQL database of user-created events.',
-                'Utilized Figma to design and structure the homepage of the web app. Planned and developed front-end pages by linking them to one another using routes and the navbar. '
+                'Produced and launched a React web app for user creation personalized events and RSVPS with execution of API requests to retrieve and post data from a MySQL database.',
+                'Designed and structured the homepage of the web app for smoother UI with Figma and integrated seamless routing between front-end pages to provide an intuitive and seamless user experience.'
             ],
             'Personal Note': 'This project was my first formal introduction to working on a full stack project. I learned a lot about working with APIs and databases, as well as how to structure and design a web application. I enjoyed collaborating with my team on this project and learned a lot from our supervisors and mentors during this project.'
         },
@@ -49,8 +46,8 @@ function Experiences({isOpen, onClose}) {
             'Dates': 'August 2022 - December 2022',
             'Position': 'Machine Learning Engineer Intern',
             'Description': [
-                'Contributed to a team project of 4 to complete sentiment analysis on over 80,000 tweets regarding recent product releases from Apple and Samsung using natural language processing.',
-                'Pulled real-time tweets over a week from X’s API to build an accurate unsupervised learning sentiment model with Dataiku.'
+                'Performed sentiment analysis on over 80,000 tweets related to recent Apple and Samsung product releases by employing natural language processing techniques to analyze public sentiment for business insights.',
+                "Extracted real-time tweets from X's API over a week to construct an accurate unsupervised learning sentiment model utilizing Dataiku."
             ],
             'Personal Note': `This internship was conducted during Break Through Tech's AI Program. I learned a lot about machine learning and natural language processing during this internship. I enjoyed working with my team to analyze the sentiment of tweets and present our findings to our supervisors. I gained valuable experience in working with large datasets and building machine learning models.`  
         },
