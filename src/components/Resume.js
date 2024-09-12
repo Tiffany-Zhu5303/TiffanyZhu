@@ -10,7 +10,7 @@ function Resume({isOpen, onClose}) {
         <div className='no-scrollbar resume-page w-full h-max absolute inset-0 overflow-x-hidden bg-linen'>
             <IoClose onClick={onClose} className='cursor-pointer size-12' id='resume-top'/>
             <div className='w-full h-max flex justify-center pb-8'>
-                <iframe src={ResumePDF} title='My Resume!' width='90%' className='h-max'/>
+                <iframe src={ResumePDF} title='My Resume!' width='90%' height='100%' className='h-9/10vh'/>
             </div>
             <div className='flex items-center justify-end mr-8 back-to-top'>
                 <a href='#resume-top' className='text-lg bg-pomp-and-power text-white px-4 py-2 rounded-lg my-8'>Back to top</a>

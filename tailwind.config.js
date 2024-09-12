@@ -12,7 +12,10 @@ module.exports = {
       },
       width: {
         '9/10vw': '90vw',
-      }
+      },
+      height: {
+        '9/10vh': '90vh',
+      },
     },
   },
   plugins: [],
