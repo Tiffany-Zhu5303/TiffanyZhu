@@ -28,17 +28,17 @@ function App() {
   }
 
   return (
-    <div className="w-full flex flex-col justify-center items-center overflow-x-hidden">
-      <div className='intro-container w-full bg-periwinkle p-8 flex justify-center items-center overflow-x-hidden'>
+    <div className="w-full min-h-screen flex flex-col justify-center items-center overflow-x-hidden bg-gradient-to-br from-lavender-floral via-periwinkle to-seashell">
+      <div className='intro-container w-full p-8 flex justify-center items-center overflow-x-hidden'>
         <div className='mx-8 relative rounded-full'>
           <img src={profile} className='profile-pic rounded-full w-full h-full mx-auto border-2' alt='Tiffany Zhu' />
         </div>
         <div className='size-down'>
-          <h1 className='font-bold text-2xl'>I'm Tiffany Zhu 👋🏼</h1>
+          <h1 className='font-bold text-4xl'>I'm Tiffany Zhu 👋🏼</h1>
           <p className='text-lg py-4'>
             Hello World! Welcome to my personal app 🤩
-            <br/>I'm a senior at CUNY's Hunter College majoring in Computer Science as an aspiring web and software developer.
-            <br/>I am passionate about creating and designing websites and applications that are user-friendly and accessible to all.
+            <br/>I'm a data analyst intern at the Metropolitan Transportation Authority and an aspiring web/software developer.
+            <br/>My goal is to make a positive impact on the world through technology and data!
           </p>
           <div className='flex'>
             <a href='https://www.linkedin.com/in/tiffany-zhu-tz' target='_blank' rel='noreferrer'><FaLinkedin className='text-4xl hover:text-pomp-and-power hover:cursor-pointer'/></a>
@@ -47,17 +47,17 @@ function App() {
         </div>
       </div>
       <div className='size-up size-down flex flex-col items-center'>
-          <h1 className='text-4xl font-bold text-pomp-and-power py-8'>My Resume 📄</h1>
+          <h1 className='text-3xl font-bold py-8'>My Resume 📄</h1>
           <a href='#resume-top'>
             <div className='resume-holder relative flex flex-col justify-end border-2' onClick={openResume}>
                 <img src={resumePreview} alt='resume preview' width='100%' height='100%'/>
                 <div className='absolute w-full h-2/6 bg-periwinkle flex justify-center items-center'>
-                  <button className='text-lg px-4 py-2 hover:underline'>Check it out!</button>
+                  <button className='text-lg px-4 py-2'>Check it out!</button>
                 </div>
             </div>
           </a>
           <a href='#experiences-top'>
-            <button className='text-lg bg-pomp-and-power text-white px-4 py-2 rounded-lg my-8' onClick={openExperiences}>More on my journey 💻 </button>
+            <button className='text-lg bg-periwinkle px-4 py-2 rounded-lg my-8' onClick={openExperiences}>More on my journey 💻 </button>
           </a>
           {experiencesOpened && <Experiences isOpen={experiencesOpened} onClose={closeExperiences} className={experiencesOpened ? '' : 'hidden'}/>}
           {resumeOpened && <Resume isOpen={resumeOpened} onClose={closeResume} className={resumeOpened ? '' : 'hidden'}/>}

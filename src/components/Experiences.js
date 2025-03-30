@@ -6,14 +6,27 @@ function Experiences({isOpen, onClose}) {
     if (!isOpen) return null;
     const experiences = [
         {
+            'Company': 'Metropolitan Transportation Authority',
+            'Location-type': 'In-person',
+            'Location': 'New York, NY',
+            'Dates': 'January 2025 - Present',
+            'Position': 'Data Analyst Intern',
+            'Description': [
+                'Engineer and maintain scalable database systems and ETL pipelines, utilizing technologies such as MySQL, PostgreSQL, Spark, AWS, and Azure to streamline data processing and enhance performance.',
+                'Design and deploy interactive dashboards using React.js and Angular.js, delivering actionable insights for infrastructure planning and decision-making.',
+                'Strengthen data governance and security protocols by implementing classification models and data masking strategies to ensure compliance and integrity.'
+            ],
+            'Personal Note': "As a New Yorker, it has been extremely rewarding to contribute to work flow of the city’s largest transportation infrastructure in the Construction and Development department. I am learning a lot about data analysis, database management, and ETL pipelines. I enjoy working with my team and supervisors to deliver actionable insights and solutions to improve the MTA’s operations. I am excited to continue learning and growing in this role."
+        },
+        {
             'Company': 'Hunter College',
             'Location-type': 'In-person',
             'Location': 'New York, NY',
-            'Dates': 'October 2023 - Present',
+            'Dates': 'October 2023 - December 2024',
             'Position': 'Japanese Peer Tutor',
             'Description': [
-                'Foster a supportive learning environment that empowers students to achieve their goals and deliver individualized instruction in grammar, conversation, and reading comprehension to students of levels from beginner to advanced.',
-                'Conduct engaging weekly sessions lasting 1-3 hours, where students can actively practice their skills and receive personalized feedback to reinforce their understanding and boost their confidence and progress in Japanese language acquisition.'
+                'Fostered a supportive learning environment that empowered students to achieve their goals and delivered individualized instruction in grammar, conversation, and reading comprehension to students of levels from beginner to advanced.',
+                'Conducted engaging weekly sessions lasting 1-3 hours, where students actively practiced their skills and received personalized feedback to reinforce their understanding and boost their confidence and progress in Japanese language acquisition.'
             ],
             'Personal Note': 'I love helping students learn Japanese and sharing my passion for the language and culture! I continue to review and practice my Japanese through my interactions with the students and the materials I use to teach them. I enjoy seeing the progress that the students make and the confidence they gain in their Japanese abilities.'
         },
@@ -65,16 +78,16 @@ function Experiences({isOpen, onClose}) {
     ];
 
     return (
-        <div className='experience-page bg-linen w-full h-max absolute inset-0 overflow-x-hidden'>
+        <div className='experience-page bg-gradient-to-b from-wisteria via-periwinkle to-magnolia w-full h-max absolute inset-0 overflow-x-hidden'>
             <IoClose onClick={onClose} className='cursor-pointer size-12' id='experiences-top'/>
             <div className='w-full flex justify-center'>
-                <h1 className='text-4xl font-bold text-pomp-and-power'>My Experiences!</h1>
+                <h1 className='text-4xl font-bold text-dark-purple'>My Experiences!</h1>
             </div>
             <div className='grid grid-cols-1 w-full py-8'>
                 {experiences.map((experience, index) => (
                     <div key={index} className='p-4 grid grid-cols-9'>
                         <div className='col-start-2 col-span-4'>
-                            <h2 className='text-2xl font-bold text-pomp-and-power'>{experience['Company']} - <span className='italic'>{experience['Location-type'] === 'Remote' ? 'Remote' : experience['Location']}</span></h2>
+                            <h2 className='text-2xl font-bold text-dark-purple'>{experience['Company']} - <span className='italic'>{experience['Location-type'] === 'Remote' ? 'Remote' : experience['Location']}</span></h2>
                             <p className='text-lg italic'>{experience['Position']}</p>
                             <ul className='list-disc pt-4'>
                                 {experience['Description'].map((desc, index) => (
@@ -90,8 +103,8 @@ function Experiences({isOpen, onClose}) {
                 ))}
                 <div className='grid grid-cols-9 back-to-top'>
                     <div className='col-start-7 col-span-2 flex items-center justify-end'>
-                        <a href='#experiences-top' className='back-to-top-bttn text-lg bg-pomp-and-power text-white px-4 py-2 rounded-lg my-8'>Back to top</a>
-                        <a href='#experiences-top'><FaHandPointUp className='text-4xl text-pomp-and-power'/></a>
+                        <a href='#experiences-top' className='back-to-top-bttn text-lg bg-dark-purple text-white px-4 py-2 rounded-lg my-8'>Back to top</a>
+                        <a href='#experiences-top'><FaHandPointUp className='text-4xl text-dark-purple'/></a>
                     </div>
                 </div>
             </div>

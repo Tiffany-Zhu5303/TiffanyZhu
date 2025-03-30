@@ -7,7 +7,7 @@ function Resume({isOpen, onClose}) {
     if(!isOpen) return null;
 
     return (
-        <div className='no-scrollbar resume-page w-full h-max absolute inset-0 overflow-x-hidden bg-linen'>
+        <div className='no-scrollbar resume-page w-full h-max absolute inset-0 overflow-x-hidden bg-gradient-to-b from-lavender-floral via-periwinkle to-pomp-and-power'>
             <IoClose onClick={onClose} className='cursor-pointer size-12' id='resume-top'/>
             <div className='w-full h-max flex justify-center pb-8'>
                 <iframe src={ResumePDF} title='My Resume!' width='90%' height='100%' className='h-9/10vh'/>
