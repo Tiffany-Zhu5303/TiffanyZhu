@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
-import Experiences from './components/Experiences';
-import Resume from './components/Resume';
-import profile from './images/LinkedinProfile.jpeg';
-import resumePreview from './images/resume-preview.png';
+import {useState} from 'react';
+import Image from 'next/image';
+import profile from '../public/LinkedinProfile.jpeg';
+import Experiences from '../components/Experiences';
+import Resume from '../components/Resume';
+import resumePreview from '../public/resume-preview.png';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
-import './App.css';
 
-function App() {
+export default function Home() {
   const [experiencesOpened, setExperiencesOpened] = useState(false);
   const [resumeOpened, setResumeOpened] = useState(false);
 
@@ -29,15 +29,18 @@ function App() {
 
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center overflow-x-hidden bg-gradient-to-br from-lavender-floral via-periwinkle to-seashell">
-      <div className='intro-container w-full p-8 flex justify-center items-center overflow-x-hidden'>
-        <div className='mx-8 relative rounded-full'>
-          <img src={profile} className='profile-pic rounded-full w-full h-full mx-auto border-2' alt='Tiffany Zhu' />
+      <div className='w-full p-8 flex flex-col md:flex-row justify-center items-center overflow-x-hidden'>
+        <div className='m-8 relative rounded-full'>
+          <Image 
+            src={profile} 
+            className='profile-pic rounded-full mx-auto border-2' 
+            alt='Tiffany Zhu' />
         </div>
         <div className='size-down'>
           <h1 className='font-bold text-4xl'>I'm Tiffany Zhu 👋🏼</h1>
           <p className='text-lg py-4'>
             Hello World! Welcome to my personal app 🤩
-            <br/>I'm a data analyst intern at the Metropolitan Transportation Authority and an aspiring web/software developer.
+            <br/>I'm a data engineering intern at the Metropolitan Transportation Authority 🚇
             <br/>My goal is to make a positive impact on the world through technology and data!
           </p>
           <div className='flex'>
@@ -50,7 +53,11 @@ function App() {
           <h1 className='text-3xl font-bold py-8'>My Resume 📄</h1>
           <a href='#resume-top'>
             <div className='resume-holder relative flex flex-col justify-end border-2' onClick={openResume}>
-                <img src={resumePreview} alt='resume preview' width='100%' height='100%'/>
+                <Image 
+                  src={resumePreview} 
+                  alt='resume preview' 
+                  width='100%' 
+                  height='100%'/>
                 <div className='absolute w-full h-2/6 bg-periwinkle flex justify-center items-center'>
                   <button className='text-lg px-4 py-2'>Check it out!</button>
                 </div>
@@ -64,6 +71,4 @@ function App() {
       </div>
     </div>
   );
-}
-
-export default App;
+};
