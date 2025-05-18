@@ -2,7 +2,7 @@ import React from 'react';
 import { IoClose } from "react-icons/io5";
 import { FaHandPointUp } from "react-icons/fa";
 
-function Experiences({isOpen, onClose}) {   
+export default function Experiences({isOpen, onClose}) {   
     if (!isOpen) return null;
     const experiences = [
         {
@@ -110,6 +110,4 @@ function Experiences({isOpen, onClose}) {
             </div>
         </div>
     );
-}
-
-export default Experiences;
+};

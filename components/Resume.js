@@ -3,7 +3,7 @@ import { IoClose } from "react-icons/io5";
 import { FaHandPointUp } from "react-icons/fa";
 // import ResumePDF from '../public/Resume.pdf';
 
-function Resume({isOpen, onClose}) {
+export default function Resume({isOpen, onClose}) {
     if(!isOpen) return null;
 
     return (
@@ -18,6 +18,4 @@ function Resume({isOpen, onClose}) {
             </div>
         </div>
     );
-}
-
-export default Resume;
+};

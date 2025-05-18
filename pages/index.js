@@ -1,8 +1,9 @@
 import {useState} from 'react';
 import Image from 'next/image';
 import profile from '../public/LinkedinProfile.jpeg';
-import Experiences from '../components/Experiences';
-import Resume from '../components/Resume';
+import Navbar from '@/components/Navbar';
+import Experiences from '@/components/Experiences';
+import Resume from '@/components/Resume';
 import resumePreview from '../public/resume-preview.png';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
@@ -29,6 +30,7 @@ export default function Home() {
 
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center overflow-x-hidden bg-gradient-to-br from-lavender-floral via-periwinkle to-seashell">
+      <Navbar />
       <div className='w-full p-8 flex flex-col md:flex-row justify-center items-center overflow-x-hidden'>
         <div className='m-8 relative rounded-full'>
           <Image 
