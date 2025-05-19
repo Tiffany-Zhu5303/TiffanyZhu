@@ -2,7 +2,7 @@ import React from 'react';
 import { IoClose } from "react-icons/io5";
 import { FaHandPointUp } from "react-icons/fa";
 
-export default function Experiences({isOpen, onClose}) {   
+export default function ExperiencesList({isOpen, onClose}) {   
     if (!isOpen) return null;
     const experiences = [
         {
