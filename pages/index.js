@@ -19,7 +19,7 @@ export default function Home() {
           <p className='text-lg py-4'>
             Hello World! Welcome to my personal app 🤩
             <br/>I'm a data engineering intern at the Metropolitan Transportation Authority 🚇
-            <br/>My goal is to make a positive impact on the world through technology and data!
+            <br/>My goal is to make a positive impact on the world with technology and data!
           </p>
           <div className='flex'>
             <a href='https://www.linkedin.com/in/tiffany-zhu-tz' target='_blank' rel='noreferrer'><FaLinkedin className='text-4xl hover:text-pomp-and-power hover:cursor-pointer'/></a>

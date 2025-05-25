@@ -18,15 +18,21 @@ export default function GraduationCountdown() {
         };
     };
 
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    const [timeLeft, setTimeLeft] = useState(null);
+    const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
+        setIsMounted(true); 
+        setTimeLeft(calculateTimeLeft());
+
         const timer = setInterval(() => {
             setTimeLeft(calculateTimeLeft());
         }, 1000);
 
         return () => clearInterval(timer);
     }, []);
+
+    if (!isMounted) return null;
     
     return (
         <div className="flex flex-col items-center justify-center w-full">
