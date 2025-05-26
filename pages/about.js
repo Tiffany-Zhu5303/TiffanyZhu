@@ -12,8 +12,8 @@ export default function About() {
                         className='mx-auto border-2 w-fit h-fit rounded-full'
                     />
                     <div className="flex flex-col items-center justify-center w-1/2 mx-auto">
-                        <p className='text-lg font-bold text-center'>
-                            Hello World! I’m Tiffany Zhu 👋🏼
+                        <p className='text-[3vw] font-bold text-center'>
+                            Hello World!
                         </p>
                         <p className="text-lg text-center">
                             I’m a data engineering intern at the Metropolitan Transportation Authority.

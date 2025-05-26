@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import Image from 'next/image';
-import ExperiencesList from '@/components/ExperiencesList';
+import ExperienceDisplay from '@/components/ExperienceDisplay';
 import Resume from '@/components/Resume';
 import resumePreview from '../public/resume-preview.png';
 
@@ -43,7 +43,7 @@ export default function Experiences() {
               <a href='#experiences-top'>
                 <button className='text-lg bg-periwinkle px-4 py-2 rounded-lg my-8' onClick={openExperiences}>More on my journey 💻 </button>
               </a>
-              {experiencesOpened && <ExperiencesList isOpen={experiencesOpened} onClose={closeExperiences} className={experiencesOpened ? '' : 'hidden'}/>}
+              {experiencesOpened && <ExperienceDisplay isOpen={experiencesOpened} onClose={closeExperiences} className={experiencesOpened ? '' : 'hidden'}/>}
               {resumeOpened && <Resume isOpen={resumeOpened} onClose={closeResume} className={resumeOpened ? '' : 'hidden'}/>}
           </div>
         </div>
