@@ -17,7 +17,7 @@ export default function ProjectCard({ title, shortDescription, longDescription, 
                     <div className="flex flex-col justify-center items-center w-1/2">
                         <CardHeader className="flex justify-center items-center w-fit">
                             <CardTitle className="text-2xl font-bold">{title}</CardTitle>
-                            <CardDescription className="text-sm w-5/6">{shortDescription}</CardDescription>
+                            <CardDescription className="text-sm w-5/6 text-center">{shortDescription}</CardDescription>
                         </CardHeader>
                     </div>
                 </Card>

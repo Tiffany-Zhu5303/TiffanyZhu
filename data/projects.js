@@ -23,7 +23,7 @@ const ProjectsList = [
     },
     {
         title: 'Jeopardy With Friends',
-        shortDescription: 'A real-time, multiplayer web application that recreates the classic Jeopardy trivia game for friends to play together online',
+        shortDescription: 'A real-time, multiplayer web application that recreates the classic Jeopardy trivia game for friends to play together online.',
         longDescription: 'An interactive and real-time multiplayer web application that recreates the classic Jeopardy trivia game. This app features a user-friendly interface, real-time updates, and a variety of trivia categories to choose from. Players can join games with friends, compete against each other, and test their knowledge in a fun and engaging way. In addition, this app is designed to be accessible and easy to use, making it perfect for trivia enthusiasts and casual players alike.',
         technologies: ['React', 'Node.js', 'Socket.io', 'Jest', 'Firebase Auth'],
         image: '/JeopardyWithFriends.png',
@@ -46,6 +46,12 @@ const ProjectsList = [
             {
                 name: 'Michael Russo'
             }
+        ],
+        slidesImages: [
+
+        ],
+        slidesCaption: [
+
         ]
     }
 ]

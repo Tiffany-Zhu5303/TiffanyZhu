@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import profile from '../public/LinkedinProfile.jpeg';
-import GraduationCountdown from '@/components/HomeWidget';
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 
