@@ -1,6 +1,6 @@
 # Welcome to my personal web app!
 
-Check out my site [here](https://tiffany-zhu5303.github.io/TiffanyZhu/#experiences-top) or follow the steps below to run my app locally! 
+Check out my site [here](https://tiffany-zhu.vercel.app/) or follow the steps below to run my app locally! 
 
 This is a [Next.js](https://nextjs.org) project migrated from CRA bootstrap (https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
