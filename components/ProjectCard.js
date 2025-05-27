@@ -1,8 +1,9 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function ProjectCard({ title, shortDescription, longDescription, technologies, image, link, video, github, collaborators }) {
+export default function ProjectCard({ title, shortDescription, longDescription, technologies, image, link, github, collaborators, projectRoute }) {
     return (
         <Dialog>
             <DialogTrigger asChild>
@@ -50,9 +51,16 @@ export default function ProjectCard({ title, shortDescription, longDescription, 
                     <a href={github} target="_blank" rel="noopener noreferrer" className="m-4 inline-block px-4 py-2 w-fit bg-lavender-floral/30 rounded hover:bg-wisteria hover:text-white transition duration-300">
                         View Code
                     </a>
+                    
+                    {link ?
                     <a href={link} target="_blank" rel="noopener noreferrer" className="m-4 inline-block px-4 py-2 w-fit bg-lavender-floral/30 rounded hover:bg-wisteria hover:text-white transition duration-300">
                         View Project
-                    </a>                    
+                    </a>    
+                    : 
+                    <Link href={`/projects/${projectRoute}`} className="m-4 inline-block px-4 py-2 w-fit bg-lavender-floral/30 rounded hover:bg-wisteria hover:text-white transition duration-300">
+                        View Project
+                    </Link>                  
+                    }
                 </div>
             </DialogContent>
         </Dialog>
