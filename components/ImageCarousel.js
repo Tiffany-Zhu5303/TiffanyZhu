@@ -15,17 +15,17 @@ export default function ImageCarousel({ images, titles, descriptions }) {
   };
 
   return (
-    <div className="relative w-5/6 h-[500px] mt-8 bg-white/50 rounded-lg shadow-lg p-10 flex flex-col items-center transition-all duration-500 ease-in-out transform">
-      <div className="w-full h-full flex justify-between items-center">
-        <div className="w-3/4 h-full flex flex-col items-center justify-between">
+    <div className="relative w-5/6 h-[500px] md:h-[525px] mt-8 bg-white/50 rounded-lg shadow-lg p-8 lg:p-10 m-10 mb-10 flex flex-col items-center justify-center">
+      <div className="w-full h-full flex flex-col lg:flex-row justify-between items-center">
+        <div className="w-full h-full flex flex-col-reverse lg:flex-col items-center justify-between">
           { images[currentIndex].endsWith('.mp4') ?
             <video
               key={currentIndex}
               src={images[currentIndex]}
               alt={`Slide ${currentIndex + 1}`}
-              width={1000}
-              height={1000}
-              className="w-4/5 h-full object-cover"
+              width={900}
+              height={900}
+              className="w-5/6 h-5/6"
               autoPlay
               loop
               muted
@@ -36,28 +36,29 @@ export default function ImageCarousel({ images, titles, descriptions }) {
               key={currentIndex}
               src={images[currentIndex]}
               alt={`Slide ${currentIndex + 1}`}
-              width={1000}
-              height={1000}
-              className="w-4/5 h-full object-cover"
+              width={900}
+              height={900}
+              className="w-5/6 h-5/6"
+              loading="lazy"
             />
           }
-          <p>{currentIndex+1}/{images.length}</p>
+          <p className="pb-4 md:p-4">{currentIndex+1}/{images.length}</p>
         </div>
-        <div className="w-1/4 h-[200px] p-4 flex flex-col items-center">
+        <div className="w-full lg:w-1/4 h-full p-4 flex flex-col items-center">
           <p className="font-bold">{titles[currentIndex]}</p>
-          <p className="pt-4">{descriptions[currentIndex]}</p>
+          <p className="pt-4 leading-[2vh]">{descriptions[currentIndex]}</p>
         </div>
       </div>
       
       <button
         onClick={prevImage}
-        className="absolute left-2 top-1/2 transform p-2 rounded-full shadow-lg border border-dark-purple/25"
+        className="absolute left-2 top-3/4 lg:top-1/2 transform p-2 rounded-full shadow-lg border border-dark-purple/25"
       >
         &lt;
       </button>
       <button
         onClick={nextImage}
-        className="absolute right-2 top-1/2 transform p-2 rounded-full shadow-lg border border-dark-purple/25"
+        className="absolute right-2 top-3/4 lg:top-1/2 transform p-2 rounded-full shadow-lg border border-dark-purple/25"
       >
         &gt;
       </button>
