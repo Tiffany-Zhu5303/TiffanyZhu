@@ -61,7 +61,7 @@ const ProjectsList = [
             descriptions: [
                 'Features dashboards of active users, active games, and the instructions for new users. Users are able to look up private rooms to join or create a new game.',
                 'Features real time waiting room for users to join before the game starts. The game begins once all players toggle their "ready" button and it immediately redirects them to a random gameboard.',
-                'Features a gameboard with a Jeopardy-style layout. Users can select categories and questions, and the game will keep track of scores in real-time.',
+                'Features a gameboard with a Jeopardy-style layout. Users can select categories and questions, and the game will keep track of scores in real-time. First round is Jeopardy, second round is Double Jeopardy (doubled score), and final round is Final Jeopardy.',
                 'Features user information tab, game history tab, and a game statistics tab. Users are able to update their profile information here. Updates made will be reflected immediately and will be stored in Firebase Auth.',
             ]
         }

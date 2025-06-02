@@ -15,7 +15,7 @@ export default function ImageCarousel({ images, titles, descriptions }) {
   };
 
   return (
-    <div className="relative w-5/6 h-[500px] md:h-[525px] mt-8 bg-white/50 rounded-lg shadow-lg p-8 lg:p-10 m-10 mb-10 flex flex-col items-center justify-center">
+    <div className="relative w-5/6 h-[500px] md:h-[525px] mt-8 bg-white/25 rounded-lg shadow-lg p-8 lg:p-10 m-10 mb-10 flex flex-col items-center justify-center">
       <div className="w-full h-full flex flex-col lg:flex-row justify-between items-center">
         <div className="w-full h-full flex flex-col-reverse lg:flex-col items-center justify-between">
           { images[currentIndex].endsWith('.mp4') ?
