@@ -24,7 +24,7 @@ const ProjectsList = [
         title: 'Jeopardy With Friends',
         shortDescription: 'A real-time, multiplayer web application that recreates the classic Jeopardy trivia game for friends to play together online.',
         longDescription: 'An interactive and real-time multiplayer web application that recreates the classic Jeopardy trivia game. This app features a user-friendly interface, real-time updates, and a variety of trivia categories to choose from. Players can join games with friends, compete against each other, and test their knowledge in a fun and engaging way. In addition, this app is designed to be accessible and easy to use, making it perfect for trivia enthusiasts and casual players alike.',
-        technologies: ['React', 'Node.js', 'Socket.io', 'Jest', 'Firebase Auth'],
+        technologies: ['React', 'Node.js', 'Socket.IO', 'Jest', 'Firebase Auth'],
         image: '/JeopardyWithFriends/Login.png',
         link: '',
         github: 'https://github.com/csci-499-fa24/Team2',
@@ -45,13 +45,26 @@ const ProjectsList = [
                 name: 'Michael Russo'
             }
         ],
-        slidesImages: [
-            '/JeopardyWithFriends/Home.png',
-            '/JeopardyWithFriends/Profile-page.gif',
-        ],
-        slidesCaption: [
-            'Home page of Jeopardy With Friends. It features dashboards of active users, active games, and the instructions for new users. From this page, users are able to look up private rooms to join or create a new game.',
-        ]
+        carousel: {
+            images: [
+                '/JeopardyWithFriends/Home.png',
+                '/JeopardyWithFriends/WaitingRoom.mp4',
+                '/JeopardyWithFriends/Gameboard.mp4',
+                '/JeopardyWithFriends/Profile-page.gif',
+            ],
+            titles: [
+                'Home Page',
+                'Waiting Room',
+                'Gameboard',
+                'User Page'
+            ],
+            descriptions: [
+                'Features dashboards of active users, active games, and the instructions for new users. Users are able to look up private rooms to join or create a new game.',
+                'Features real time waiting room for users to join before the game starts. The game begins once all players toggle their "ready" button and it immediately redirects them to a random gameboard.',
+                'Features a gameboard with a Jeopardy-style layout. Users can select categories and questions, and the game will keep track of scores in real-time.',
+                'Features user information tab, game history tab, and a game statistics tab. Users are able to update their profile information here. Updates made will be reflected immediately and will be stored in Firebase Auth.',
+            ]
+        }
     }
 ]
 
