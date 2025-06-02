@@ -15,7 +15,7 @@ export default function ImageCarousel({ images, titles, descriptions }) {
   };
 
   return (
-    <div className="relative w-5/6 h-full mt-8 overflow-hidden bg-white/50 rounded-lg shadow-lg p-10 flex flex-col items-center">
+    <div className="relative w-5/6 h-[500px] mt-8 bg-white/50 rounded-lg shadow-lg p-10 flex flex-col items-center transition-all duration-500 ease-in-out transform">
       <div className="w-full h-full flex justify-between items-center">
         <div className="w-3/4 h-full flex flex-col items-center justify-between">
           { images[currentIndex].endsWith('.mp4') ?
@@ -29,22 +29,23 @@ export default function ImageCarousel({ images, titles, descriptions }) {
               autoPlay
               loop
               muted
+              playsInline
             />
           :
             <Image
               key={currentIndex}
               src={images[currentIndex]}
               alt={`Slide ${currentIndex + 1}`}
-              width={700}
-              height={700}
+              width={1000}
+              height={1000}
               className="w-4/5 h-full object-cover"
             />
           }
           <p>{currentIndex+1}/{images.length}</p>
         </div>
-        <div className="w-1/4 h-full p-4 flex flex-col items-center justify-between">
+        <div className="w-1/4 h-[200px] p-4 flex flex-col items-center">
           <p className="font-bold">{titles[currentIndex]}</p>
-          <p className="">{descriptions[currentIndex]}</p>
+          <p className="pt-4">{descriptions[currentIndex]}</p>
         </div>
       </div>
       
