@@ -7,15 +7,15 @@ export default function ProjectCard({ title, shortDescription, longDescription, 
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Card className="flex items-center justify-between w-4/5 p-4 m-4 bg-white/25 rounded-lg transition duration-700 transform hover: cursor-pointer hover:scale-105 shadow-md hover:shadow-lg transition-shadow duration-300">
+                <Card className="flex flex-col md:flex-row items-center justify-between w-4/5 p-4 m-4 bg-white/25 rounded-lg transition duration-700 transform hover: cursor-pointer hover:scale-105 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <Image 
                         src={image} 
                         alt={title} 
                         width={600}
                         height={600}
-                        className="w-1/2 h-1/2 object-cover rounded-t-lg" />
+                        className="w-3/4 md:w-1/2 h-1/2 object-cover rounded-t-lg" />
 
-                    <div className="flex flex-col justify-center items-center w-1/2">
+                    <div className="flex flex-col justify-center items-center w-5/6 md:w-1/2">
                         <CardHeader className="flex justify-center items-center w-fit">
                             <CardTitle className="text-2xl font-bold">{title}</CardTitle>
                             <CardDescription className="text-sm w-5/6 text-center">{shortDescription}</CardDescription>
@@ -23,7 +23,7 @@ export default function ProjectCard({ title, shortDescription, longDescription, 
                     </div>
                 </Card>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-md bg-magnolia rounded-lg">
+            <DialogContent className="h-[90vh] w-[90vw] max-w-sm md:max-w-md lg:max-w-lg bg-magnolia rounded-lg overflow-y-auto">
                 <h1 className="font-bold">{title}</h1>
                 <p>{longDescription}</p>
                 <p className="text-lg font-bold">Tech Stack:</p>
