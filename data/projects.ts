@@ -1,4 +1,6 @@
-const ProjectsList = [
+import { Project, Collaborator, Carousel } from './types';
+
+const ProjectsList: Project[] = [
     // {
     //     title: 'Garlic=Rich Air',
     //     shortDescription: 'An immersive web application to reinterpret and showcase the unique artwork by Shu Lea Cheang (2002-2003).',
@@ -69,7 +71,7 @@ const ProjectsList = [
 ]
 
 ProjectsList.forEach(project => {
-  project.projectRoute = project.title.toLowerCase().replace(/\s+/g, "");
+  project.projectroute = project.title.toLowerCase().replace(/\s+/g, "");
 });
 
 export default ProjectsList;

@@ -16,8 +16,8 @@ export default function About() {
                             Hello World!
                         </p>
                         <p className="text-lg text-center">
-                            I’m a data engineering intern at the Metropolitan Transportation Authority.
-                            I’m about to graduate from CUNY Hunter college with bachelor's degree in Computer Science and minor in mathematics and Japanese language. 
+                            I’m currently a data engineering intern at the Metropolitan Transportation Authority in New York City.
+                            I graduated from CUNY Hunter college with a bachelor's degree in Computer Science and minor in mathematics and Japanese language. 
                             My favorite courses were web development, symbolic logic, database management and Japanese language. 
                             <br/>As an aspiring software developer and data engineer, I look forward to working on various projects with different tech stacks to learn and grow my skills! 
                         </p>

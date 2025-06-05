@@ -1,7 +1,14 @@
-import { useState } from "react";
+"use client";
+import { use, useState } from "react";
 import Image from "next/image";
 
-export default function ImageCarousel({ images, titles, descriptions }) {
+interface ImageCarouselProps {
+  images: string[];       
+  titles: string[];        
+  descriptions: string[];  
+}
+
+export default function ImageCarousel({ images, titles, descriptions } : ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
@@ -22,7 +29,6 @@ export default function ImageCarousel({ images, titles, descriptions }) {
             <video
               key={currentIndex}
               src={images[currentIndex]}
-              alt={`Slide ${currentIndex + 1}`}
               width={900}
               height={900}
               className="w-5/6 h-5/6"

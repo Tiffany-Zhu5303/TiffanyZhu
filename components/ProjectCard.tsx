@@ -1,9 +1,20 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "../components/ui/card"
+import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
 import Image from "next/image";
 import Link from "next/link";
+import { Project } from "../data/types";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
-export default function ProjectCard({ title, shortDescription, longDescription, technologies, image, link, github, collaborators, projectRoute }) {
+export default function ProjectCard({ 
+    title, 
+    shortDescription, 
+    longDescription, 
+    technologies, 
+    image, 
+    link, 
+    github, 
+    collaborators, 
+    projectroute } : Project) {
     return (
         <Dialog>
             <DialogTrigger asChild>
@@ -23,6 +34,9 @@ export default function ProjectCard({ title, shortDescription, longDescription, 
                     </div>
                 </Card>
             </DialogTrigger>
+            <DialogTitle className="hidden">
+                {title} Details
+            </DialogTitle>
             <DialogContent className="h-[90vh] w-[90vw] max-w-sm md:max-w-md lg:max-w-lg bg-magnolia rounded-lg overflow-y-auto">
                 <h1 className="font-bold">{title}</h1>
                 <p>{longDescription}</p>
@@ -57,7 +71,7 @@ export default function ProjectCard({ title, shortDescription, longDescription, 
                         View Project
                     </a>    
                     : 
-                    <Link href={`/projects/${projectRoute}`} className="m-4 inline-block px-4 py-2 w-fit bg-lavender-floral/30 rounded hover:bg-wisteria hover:text-white transition duration-300">
+                    <Link href={`/projects/${projectroute}`} className="m-4 inline-block px-4 py-2 w-fit bg-lavender-floral/30 rounded hover:bg-wisteria hover:text-white transition duration-300">
                         View Project
                     </Link>                  
                     }
