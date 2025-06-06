@@ -1,22 +1,22 @@
 'use client'
+import { FaFileDownload } from "react-icons/fa";
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.min.js`
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 export default function ResumeViewer() {
   return (
-    <div className="flex flex-col items-center p-4">
-      <Document
-        file="/Resume.pdf"
-      >
+    <div className="flex flex-col items-center p-4 m-12">
+      <Document file="/Resume.pdf" className='z-0'>
         <Page pageNumber={1} />
       </Document>
       <a
-        href="/resume.pdf"
+        href="/Resume.pdf"
         download
-        className="mt-4 text-blue-500 underline"
+        className="flex items-center justify-center w-1/10 p-4 mt-8 bg-white/25 rounded-lg transition duration-700 transform hover: cursor-pointer hover:scale-105 shadow-md hover:shadow-lg transition-shadow duration-300 font-bold"
       >
-        Download / Print PDF
+        Download Resume
       </a>
     </div>
   );

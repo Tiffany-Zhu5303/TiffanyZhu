@@ -32,9 +32,3 @@ export type Experiences = {
   Description: string[],
   PersonalNotes: string
 }
-
-export type ProjectPageProps = {
-  params: {
-    projectroute: string;
-  };
-};

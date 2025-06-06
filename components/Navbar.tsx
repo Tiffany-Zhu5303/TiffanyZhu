@@ -15,7 +15,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`w-full fixed top-0 z-15 ${isScrolled ? 'bg-linen/25 backdrop-blur' : 'bg-transparent'} transition-all duration-700`}>
+    <nav className={`w-full fixed top-0 z-50 ${isScrolled ? 'bg-linen/25 backdrop-blur' : 'bg-transparent'} transition-all duration-700`}>
       <div className="w-full mx-auto px-4 md:px-6 lg:px-8 h-16 flex items-center justify-between">
         <div className="text-xl font-bold">
             <Link href="/">TZ</Link>

@@ -1,6 +1,11 @@
 import ProjectsList from "../../../data/projects"; 
 import ImageCarousel from "../../../components/ImageCarousel";
-import { ProjectPageProps } from "@/data/types";
+
+type ProjectPageProps = {
+  params: {
+    projectroute: string;
+  };
+};
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { projectroute } = params;
