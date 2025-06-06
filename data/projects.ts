@@ -66,7 +66,8 @@ const ProjectsList: Project[] = [
                 'Features a gameboard with a Jeopardy-style layout. Users can select categories and questions, and the game will keep track of scores in real-time. First round is Jeopardy, second round is Double Jeopardy (doubled score), and final round is Final Jeopardy.',
                 'Features user information tab, game history tab, and a game statistics tab. Users are able to update their profile information here. Updates made will be reflected immediately and will be stored in Firebase Auth.',
             ]
-        }
+        },
+        projectroute: '',
     }
 ]
 

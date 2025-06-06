@@ -1,14 +1,9 @@
-import ProjectsList from "../../../data/projects"; 
-import ImageCarousel from "../../../components/ImageCarousel";
-
-type ProjectPageProps = {
-  params: {
-    projectroute: string;
-  };
-};
+import ProjectsList from "@/data/projects"; 
+import ImageCarousel from "@/components/ImageCarousel";
+import { ProjectPageProps } from "@/data/types";
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { projectroute } = params;
+  const projectroute = await params.projectroute;
 
   const project = ProjectsList.find(
     project => project.title.toLowerCase().replace(/\s+/g, "") === projectroute

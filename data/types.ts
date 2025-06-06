@@ -20,7 +20,7 @@ export type Project = {
   github: string;
   collaborators: Collaborator[];
   carousel?: Carousel;
-  projectroute?: string;
+  projectroute: string;
 };
 
 export type Experiences = {
@@ -32,3 +32,9 @@ export type Experiences = {
   Description: string[],
   PersonalNotes: string
 }
+
+export type ProjectPageProps = {
+  params: {
+    projectroute: string;
+  };
+};
