@@ -5,7 +5,7 @@ export default function About() {
             <div className='size-up size-down flex flex-col items-center justify-evenly'>
                 <div className="flex justify-between items-center w-full p-8 m-8">                
                     <Image 
-                        src='/Profile-pic-flowers.JPG' 
+                        src='/images/profile-pic-flowers.jpeg' 
                         alt='Tiffany `&quot;`s profile picture'
                         width={500}
                         height={500} 
