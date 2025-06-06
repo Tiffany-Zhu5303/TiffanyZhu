@@ -1,12 +1,18 @@
 import ProjectsList from "@/data/projects"; 
 import ImageCarousel from "@/components/ImageCarousel";
-import { ProjectPageProps } from "@/data/types";
+
+interface ProjectPageProps{
+  params: 
+    Promise<{
+      projectroute: string
+    }>;
+};
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const projectroute = await params.projectroute;
+  const projectroute = await params;
 
   const project = ProjectsList.find(
-    project => project.title.toLowerCase().replace(/\s+/g, "") === projectroute
+    project => project.title.toLowerCase().replace(/\s+/g, "") === projectroute.projectroute
   );
 
   if (!project) return <p>Project not found.</p>;
