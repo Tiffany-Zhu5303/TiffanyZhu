@@ -32,3 +32,13 @@ export type Experiences = {
   Description: string[],
   PersonalNotes: string
 }
+
+export type Technologies = {
+  name: string;
+  icon: string;
+}
+
+export type TechStack = {
+  name: string;
+  technologies: Technologies[];
+}

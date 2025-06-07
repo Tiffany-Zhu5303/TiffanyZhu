@@ -1,4 +1,4 @@
-import { Project, Collaborator, Carousel } from './types';
+import { Project } from './types';
 
 const ProjectsList: Project[] = [
     // {
