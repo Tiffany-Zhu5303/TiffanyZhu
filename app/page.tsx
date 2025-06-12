@@ -3,13 +3,14 @@ import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 export default function HomePage() {
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center">
-      <div className="w-full p-8 mt-20 flex flex-col justify-center items-center overflow-x-hidden">
-        <h1 className="font-bold text-[10vw]">I'm Tiffany Zhu</h1>
-        <p className="text-[2vw] py-4 leading-[2vw]">
-          Welcome to my personal web app!
-          <br />I'm a data engineering intern at the Metropolitan Transportation Authority.
-          <br />My goal is to make a positive impact on the world with technology and data!
-        </p>
+      <div className="w-full min-h-screen flex flex-col justify-center items-center overflow-x-hidden">
+        <div className='w-4/5 flex flex-col justify-center items-center'>
+          <h1 className="font-bold text-[10vw]">I'm Tiffany Zhu</h1>
+          <p className="text-[2vw] py-4 leading-[2vw]">
+            I'm a data engineering intern at the Metropolitan Transportation Authority.
+            My goal is to make a positive impact on the world with technology and data.
+          </p>
+        </div>
         <div className="flex">
           <a
             href="https://www.linkedin.com/in/tiffany-zhu-tz"

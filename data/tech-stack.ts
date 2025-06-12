@@ -28,23 +28,62 @@ const TechStackList: TechStack[] = [
         technologies: [
             { name: 'Express.js', icon: '/icons/expressjs.svg' },
             { name: 'Node.js', icon: '/icons/nodejs.svg' },
+            { name: 'MySQL', icon: '/icons/mysql.svg' },
             { name: 'Firebase', icon: '/icons/firebase.svg' },
             { name: 'MongoDB', icon: '/icons/mongodb.svg' },
             { name: 'RESTful APIs', icon: '/icons/api-management.svg' },
         ],
     },
     {
-        name: 'Tools & Workflows',
+        name: 'Version Control',
         technologies: [
             { name: 'GitHub', icon: '/icons/github.svg' },
             { name: 'GitLab', icon: '/icons/gitlab.svg' },
             { name: 'Git', icon: '/icons/git.svg' },
-            { name: 'Postman', icon: '/icons/postman.svg' },
+        ]
+    },
+    {
+        name: 'Development Tools',
+        technologies: [
             { name: 'Visual Studio Code', icon: '/icons/vscode.svg' },
-            { name: 'Jest', icon: '/icons/jest.svg' },
+            { name: 'DBeaver', icon: '/icons/dbeaver.svg' },
+            { name: 'Postman', icon: '/icons/postman.svg' },
+        ]
+    },
+    {
+        name: 'Deployment & Automation',
+        technologies: [
+            { name: 'Apache Airflow', icon: '/icons/airflow.svg' },
             { name: 'Vercel', icon: '/icons/vercel.svg' },
+        ]
+    },
+    {
+        name: 'Project Management',
+        technologies: [
+            { name: 'Trello', icon: '/icons/trello.svg' },
+            { name: 'OpenProject', icon: '/icons/openproject.svg' },
+        ]
+    },
+    {
+        name: 'Machine Learning',
+        technologies: [
+            { name: 'Pandas', icon: '/icons/pandas.svg' },
+            { name: 'NumPy', icon: '/icons/numpy.svg' },
+            { name: 'Matplotlib', icon: '/icons/matplotlib.svg' },
+            { name: 'Scikit-learn', icon: '/icons/scikit-learn.svg' },
+        ]
+    },
+    {
+        name: 'Design',
+        technologies: [
             { name: 'Figma', icon: '/icons/figma.svg' },
         ],
+    },
+    {
+        name: 'Testing',
+        technologies: [
+            { name: 'Jest', icon: '/icons/jest.svg' },
+        ]
     }
 ]
 
