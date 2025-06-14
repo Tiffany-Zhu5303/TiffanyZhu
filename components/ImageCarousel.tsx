@@ -50,9 +50,9 @@ export default function ImageCarousel({ images, titles, descriptions } : ImageCa
           }
           <p className="pb-4 md:p-4">{currentIndex+1}/{images.length}</p>
         </div>
-        <div className="w-full lg:w-1/4 h-full p-4 flex flex-col items-center">
-          <p className="font-bold">{titles[currentIndex]}</p>
-          <p className="pt-4 leading-[2vh]">{descriptions[currentIndex]}</p>
+        <div className="w-full lg:w-1/4 h-full p-4 flex flex-col items-center justify-start">
+          <p className="font-bold text-xl lg:text-2xl">{titles[currentIndex]}</p>
+          <p className="pt-4 leading-none text-md lg:text-lg">{descriptions[currentIndex]}</p>
         </div>
       </div>
       

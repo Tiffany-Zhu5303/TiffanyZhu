@@ -18,18 +18,20 @@ export default function ProjectCard({
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <Card className="flex flex-col md:flex-row items-center justify-between w-4/5 p-4 m-4 bg-white/25 rounded-lg transition duration-700 transform hover: cursor-pointer hover:scale-105 shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <Image 
-                        src={image} 
-                        alt={title} 
-                        width={600}
-                        height={600}
-                        className="w-3/4 md:w-1/2 h-1/2 object-cover rounded-t-lg" />
+                <Card className="flex flex-col md:flex-row items-center justify-between w-4/5 m-4 bg-white/25 rounded-lg transition duration-700 transform hover: cursor-pointer hover:scale-105 shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <div className="w-full md:w-1/2 h-full">
+                        <Image 
+                            src={image} 
+                            alt={title} 
+                            width={700}
+                            height={700}
+                            className="w-full h-full object-cover rounded-lg" />
+                    </div>
 
-                    <div className="flex flex-col justify-center items-center w-5/6 md:w-1/2">
+                    <div className="flex flex-col justify-center items-center w-5/6 md:w-1/2 text-dark-purple">
                         <CardHeader className="flex justify-center items-center w-fit">
-                            <CardTitle className="text-2xl font-bold">{title}</CardTitle>
-                            <CardDescription className="text-sm w-5/6 text-center">{shortDescription}</CardDescription>
+                            <CardTitle className="text-xl md:text-2xl lg:text-4xl font-bold text-center">{title}</CardTitle>
+                            <CardDescription className="text-md md:text-lg w-full text-center">{shortDescription}</CardDescription>
                         </CardHeader>
                     </div>
                 </Card>

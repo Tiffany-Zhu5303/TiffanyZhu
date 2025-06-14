@@ -4,9 +4,13 @@ export default function HomePage() {
   return (
     <div className="w-full min-h-screen flex flex-col justify-center items-center">
       <div className="w-full min-h-screen flex flex-col justify-center items-center overflow-x-hidden">
-        <div className='w-4/5 flex flex-col justify-center items-center'>
-          <h1 className="font-bold text-[10vw]">I'm Tiffany Zhu</h1>
-          <p className="text-[2vw] py-4 leading-[2vw]">
+        <div className='text-center flex flex-col items-center'>
+          <h1 className="font-bold text-[10vw] leading-tight">
+            I'm 
+            <span className='block md:inline md: p-0'> Tiffany</span>            
+            <span className='block pb-4 md:inline md: p-0'> Zhu</span>
+            </h1>
+          <p className="text-lg lg:text-2xl pb-4 leading-snug w-2/3">
             I'm a data engineering intern at the Metropolitan Transportation Authority.
             My goal is to make a positive impact on the world with technology and data.
           </p>
@@ -17,14 +21,14 @@ export default function HomePage() {
             target="_blank"
             rel="noreferrer"
           >
-            <FaLinkedin className="text-4xl hover:text-pomp-and-power hover:cursor-pointer" />
+            <FaLinkedin className="text-3xl md:text-4xl lg:text-5xl hover:text-pomp-and-power hover:cursor-pointer" />
           </a>
           <a
             href="https://github.com/Tiffany-Zhu5303"
             target="_blank"
             rel="noreferrer"
           >
-            <FaGithubSquare className="text-4xl hover:text-pomp-and-power hover:cursor-pointer" />
+            <FaGithubSquare className="text-3xl md:text-4xl lg:text-5xl hover:text-pomp-and-power hover:cursor-pointer" />
           </a>
         </div>
       </div>

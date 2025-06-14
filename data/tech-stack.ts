@@ -64,15 +64,15 @@ const TechStackList: TechStack[] = [
             { name: 'OpenProject', icon: '/icons/openproject.svg' },
         ]
     },
-    {
-        name: 'Machine Learning',
-        technologies: [
-            { name: 'Pandas', icon: '/icons/pandas.svg' },
-            { name: 'NumPy', icon: '/icons/numpy.svg' },
-            { name: 'Matplotlib', icon: '/icons/matplotlib.svg' },
-            { name: 'Scikit-learn', icon: '/icons/scikit-learn.svg' },
-        ]
-    },
+    // {
+    //     name: 'Machine Learning',
+    //     technologies: [
+    //         { name: 'Pandas', icon: '/icons/pandas.svg' },
+    //         { name: 'NumPy', icon: '/icons/numpy.svg' },
+    //         { name: 'Matplotlib', icon: '/icons/matplotlib.svg' },
+    //         { name: 'Scikit-learn', icon: '/icons/scikit-learn.svg' },
+    //     ]
+    // },
     {
         name: 'Design',
         technologies: [
