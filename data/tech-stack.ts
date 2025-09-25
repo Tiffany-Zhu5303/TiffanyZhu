@@ -19,6 +19,7 @@ const TechStackList: TechStack[] = [
             { name: 'React', icon: '/icons/react.svg' },
             { name: 'Next.js', icon: '/icons/nextjs.svg' },
             { name: 'Tailwind CSS', icon: '/icons/tailwindcss.svg' },
+            { name: 'Streamlit', icon: '/icons/streamlit.svg' },
             { name: 'SwiftUI', icon: '/icons/swiftui.svg' },
             { name: 'Vue.js', icon: '/icons/vuejs.svg' },
         ],

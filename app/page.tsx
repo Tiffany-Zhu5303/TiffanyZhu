@@ -11,8 +11,7 @@ export default function HomePage() {
             <span className='block pb-4 md:inline md: p-0'> Zhu</span>
             </h1>
           <p className="text-lg lg:text-2xl pb-4 leading-snug w-2/3">
-            I'm a data engineering intern at the Metropolitan Transportation Authority.
-            My goal is to make a positive impact on the world with technology and data.
+            I'm a developer who enjoys creating user-friendly, fun web experiences, and exploring data to tell meaningful stories and make lives easier.
           </p>
         </div>
         <div className="flex">
