@@ -8,7 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.vers
 export default function ResumeViewer() {
   return (
     <div className="flex flex-col items-center p-4 md:p-8">
-      <p className='text-4xl md:text-6xl font-bold p-4 md:p-8 mt-12 md:mt-20'>Resume</p>
+      <p className='text-4xl md:text-6xl font-bold p-4 md:p-8 mt-8 md:mt-12'>Resume</p>
       <Document file="/Tiffany Zhu - Resume.pdf" className='z-0'>
         <Page pageNumber={1} />
       </Document>

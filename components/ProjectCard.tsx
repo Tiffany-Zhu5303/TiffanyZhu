@@ -42,27 +42,31 @@ export default function ProjectCard({
             <DialogContent className="h-[90vh] w-[90vw] max-w-sm md:max-w-md lg:max-w-lg bg-magnolia rounded-lg overflow-y-auto">
                 <h1 className="font-bold">{title}</h1>
                 <p>{longDescription}</p>
-                <p className="text-lg font-bold">Tech Stack:</p>
-                <ul className="list-disc pl-5">
-                    {technologies.map((tech, index) => (
-                        <li key={index} className="text-sm">{tech}</li>
-                    ))}
-                </ul>
-                <p className="text-lg font-bold">Collaborators:</p>
-                <ul className="list-disc pl-5">
-                    {collaborators.map((collab, index) => (
-                        <li key={index} className="text-sm">
-                            {collab.link ? (
-                                <a href={collab.link} target="_blank" rel="noopener noreferrer" className="text-wisteria hover:underline">
-                                    {collab.name}
-                                </a>
-                            ) : (
-                                collab.name
-                            )}
-                            {collab.role && ` (${collab.role})`}
-                        </li>
-                    ))}
-                </ul>
+                <div>
+                    <p className="text-lg font-bold pb-4">Tech Stack:</p>
+                    <ul className="list-disc pl-5">
+                        {technologies.map((tech, index) => (
+                            <li key={index} className="text-sm">{tech}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div>
+                    <p className="text-lg font-bold pb-4">Collaborators:</p>
+                    <ul className="list-disc pl-5">
+                        {collaborators.map((collab, index) => (
+                            <li key={index} className="text-sm">
+                                {collab.link ? (
+                                    <a href={collab.link} target="_blank" rel="noopener noreferrer" className="text-wisteria hover:underline">
+                                        {collab.name}
+                                    </a>
+                                ) : (
+                                    collab.name
+                                )}
+                                {collab.role && ` (${collab.role})`}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
                 <div className="flex justify-center items-center">
                     <a href={github} target="_blank" rel="noopener noreferrer" className="m-4 inline-block px-4 py-2 w-fit bg-lavender-floral/30 rounded hover:bg-wisteria hover:text-white transition duration-300">
                         View Code

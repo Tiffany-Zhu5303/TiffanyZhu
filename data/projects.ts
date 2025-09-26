@@ -6,7 +6,7 @@ const ProjectsList: Project[] = [
     //     shortDescription: 'An immersive web application to reinterpret and showcase the unique artwork by Shu Lea Cheang (2002-2003).',
     //     longDescription: 'A reinterpretation and commemoration of the unique artwork by Shu Lea Cheang (2002-2003) that explores the intersection of art, technology, and social commentary. The project aims to create an immersive web application that allows users to engage with the themes and concepts presented in the original work, while also providing a platform for reflection on the role of technology in contemporary art.',
     //     technologies: ['React', 'Tailwind CSS'],
-    //     image: '/garlic-eq-rich-air.png',
+    //     image: '/images/garlic-eq-rich-air.png',
     //     link: 'https://garlic-rich-air-fiona.vercel.app/',
     //     github: 'https://github.com/Tiffany-Zhu5303/Garlic-Rich-Air',
     //     collaborators: [
@@ -22,6 +22,24 @@ const ProjectsList: Project[] = [
     //         }
     //     ]
     // },
+    {
+        title: 'MTA ACE Violation Dashboard',
+        shortDescription: 'A Tableau Public dashboard for analysis on MTA ACE violations during 2024-2025.',
+        longDescription: 'For the Macaulays Honors College x MTA 2025 Dathathon, the theme is on MTA Automated Camera Enforcement (ACE) Violations in NYC. These are vehicle violations captured by camera at bus stops. This project features an interactive dashboard that provides insights into MTA ACE violations during 2024-2025. This dashboard sources data from data.ny.gov and allows users to explore trends, patterns, and key metrics related to MTA ACE violations. In addition, the dashboard includes data visualization of MTA congestion zone entry hot spots. Special shout out to my team: TSZR!',
+        technologies: ['Tableau', 'Python'],
+        image: '/images/MTA-ACE-Violation-Dashboard.png',
+        link: 'https://public.tableau.com/app/profile/tiffany.zhu8039/viz/MTAACEViolations/Dashboard1',
+        github: 'https://github.com/MHC-Datathon/TSZR',
+        collaborators: [
+            {
+                name: 'Sara Lukacevic'
+            },
+            {
+                name: 'Zara Raza'
+            }
+        ],
+        projectroute: '',
+    },
     {
         title: 'Jeopardy With Friends',
         shortDescription: 'A real-time, multiplayer web application that recreates the classic Jeopardy trivia game for friends to play together online.',
