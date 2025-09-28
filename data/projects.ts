@@ -36,6 +36,7 @@ const ProjectsList: Project[] = [
                 name: 'Zara Raza'
             }
         ],
+        tags: ['Data visualization', 'Data analysis'],
         projectroute: '',
     },
     {
@@ -54,6 +55,7 @@ const ProjectsList: Project[] = [
                 name: 'Krina Patel'
             }
         ],
+        tags: ['UI/UX Design', 'Mobile'],
         projectroute: '',
     },
     {
@@ -101,6 +103,7 @@ const ProjectsList: Project[] = [
                 'Features user information tab, game history tab, and a game statistics tab. Users are able to update their profile information here. Updates made will be reflected immediately and will be stored in Firebase Auth.',
             ]
         },
+        tags: ['Web', 'Full Stack'],
         projectroute: '',
     }
 ]
