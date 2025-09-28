@@ -36,7 +36,7 @@ const ProjectsList: Project[] = [
                 name: 'Zara Raza'
             }
         ],
-        tags: ['Data visualization', 'Data analysis'],
+        tags: ['Data visualization'],
         projectroute: '',
     },
     {
