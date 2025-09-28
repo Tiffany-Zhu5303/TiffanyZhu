@@ -19,13 +19,13 @@ export default function ProjectCard({
         <Dialog>
             <DialogTrigger asChild>
                 <Card className="flex flex-col md:flex-row items-center justify-between w-4/5 m-4 bg-white/25 rounded-lg transition duration-700 transform hover: cursor-pointer hover:scale-105 shadow-md hover:shadow-lg transition-shadow duration-300">
-                    <div className="w-full md:w-1/2 h-full">
+                    <div className="w-full h-full md:w-1/2">
                         <Image 
                             src={image} 
                             alt={title} 
                             width={700}
                             height={700}
-                            className="w-full h-full object-cover rounded-lg" />
+                            className="w-full max-h-[475px] object-cover rounded-lg" />
                     </div>
 
                     <div className="flex flex-col justify-center items-center w-5/6 md:w-1/2 text-dark-purple">
@@ -68,9 +68,10 @@ export default function ProjectCard({
                     </ul>
                 </div>
                 <div className="flex justify-center items-center">
+                    {github ?
                     <a href={github} target="_blank" rel="noopener noreferrer" className="m-4 inline-block px-4 py-2 w-fit bg-lavender-floral/30 rounded hover:bg-wisteria hover:text-white transition duration-300">
-                        View Code
-                    </a>
+                        View Source
+                    </a> : null }
                     
                     {link ?
                     <a href={link} target="_blank" rel="noopener noreferrer" className="m-4 inline-block px-4 py-2 w-fit bg-lavender-floral/30 rounded hover:bg-wisteria hover:text-white transition duration-300">

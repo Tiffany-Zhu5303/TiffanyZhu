@@ -7,7 +7,7 @@ export default function Projects() {
             <p className="text-4xl md:text-6xl font-bold p-4 mt-16 md:mt-20 text-center">
                 Featured Projects
             </p>
-            <div className='w-full size-up size-down flex flex-col items-center m-8'>
+            <div className='w-full flex flex-col items-center m-8'>
                 { ProjectsList.map((project, index) => (
                     <ProjectCard 
                         key={index}

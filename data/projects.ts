@@ -12,20 +12,18 @@ const ProjectsList: Project[] = [
     //     collaborators: [
     //         {
     //             name: 'Fiona Zhu',
-    //             role: 'Designer',
-    //             link: 'https://www.linkedin.com/in/fiona-zhu-1659561b4/',
+    //             role: 'Designer'
     //         },
     //         {
     //             name: 'Junheng Zhang',
-    //             role: 'Web Developer',
-    //             link: 'https://www.linkedin.com/in/junhengzheng/'
+    //             role: 'Web Developer'
     //         }
     //     ]
     // },
     {
         title: 'MTA ACE Violation Dashboard',
         shortDescription: 'A Tableau Public dashboard for analysis on MTA ACE violations during 2024-2025.',
-        longDescription: 'For the Macaulays Honors College x MTA 2025 Dathathon, the theme is on MTA Automated Camera Enforcement (ACE) Violations in NYC. These are vehicle violations captured by camera at bus stops. This project features an interactive dashboard that provides insights into MTA ACE violations during 2024-2025. This dashboard sources data from data.ny.gov and allows users to explore trends, patterns, and key metrics related to MTA ACE violations. In addition, the dashboard includes data visualization of MTA congestion zone entry hot spots. Special shout out to my team: TSZR!',
+        longDescription: 'For the Macaulays Honors College x MTA 2025 Dathathon, the theme is on MTA Automated Camera Enforcement (ACE) Violations in NYC. These are vehicle violations captured by camera at bus stops. This project features an interactive dashboard that provides insights into MTA ACE violations during 2024-2025. This dashboard sources data from data.ny.gov and allows users to explore trends, patterns, and key metrics related to MTA ACE violations. In addition, the dashboard includes data visualization of MTA congestion zone entry hot spots. Special shout out to my team TSZR for making it to top 20 contestants!',
         technologies: ['Tableau', 'Python'],
         image: '/images/MTA-ACE-Violation-Dashboard.png',
         link: 'https://public.tableau.com/app/profile/tiffany.zhu8039/viz/MTAACEViolations/Dashboard1',
@@ -36,6 +34,24 @@ const ProjectsList: Project[] = [
             },
             {
                 name: 'Zara Raza'
+            }
+        ],
+        projectroute: '',
+    },
+    {
+        title: 'PetPals',
+        shortDescription: 'Design and prototype of a mobile app that connects pet owners with local pet owners.',
+        longDescription: 'PetPals is a mobile app designed to connect pet owners with local pet owners. The app allows users to create profiles for their pets, browse other pet profiles, and set up meetups for their pets. With a focus on safety and reliability, PetPals includes features such as private messaging, calendar integration for seamless scheduling, and map alerts for nearby pets. This project aims to foster a sense of community among pet owners and provide a convenient and trustworthy platform for pets and their owners to socialize.',
+        technologies: ['Figma'],
+        image: '/images/PetPals.png',
+        link: 'https://www.figma.com/design/24PdWS7GVrkC24GDOKz7yp/PetPals-Working-MVP?node-id=0-1&t=xI3UAa0YxlDeUQSO-1',
+        github: '',
+        collaborators: [
+            {
+                name: 'Ellen Avrumova'
+            },
+            {
+                name: 'Krina Patel'
             }
         ],
         projectroute: '',
@@ -56,14 +72,14 @@ const ProjectsList: Project[] = [
                 name: 'Vicki Wu'
             },
             {
-                name: 'Shelly Masih'
-            },
-            {
                 name: 'Yulin Zheng'
             },
             {
                 name: 'Michael Russo'
-            }
+            },
+            {
+                name: 'Shelly Masih'
+            },
         ],
         carousel: {
             images: [
