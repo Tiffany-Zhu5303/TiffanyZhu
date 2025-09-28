@@ -20,6 +20,7 @@ export type Project = {
   github: string;
   collaborators: Collaborator[];
   carousel?: Carousel;
+  tags: string[];
   projectroute: string;
 };
 
