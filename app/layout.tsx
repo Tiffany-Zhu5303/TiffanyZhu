@@ -1,5 +1,6 @@
 import './globals.css';
 import Navbar from '../components/Navbar';
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   title: 'Tiffany Zhu',
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-gradient-to-br from-lavender-floral via-periwinkle to-seashell min-h-screen overflow-x-hidden">
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
