@@ -21,7 +21,6 @@ export default function About() {
                         My favorite courses were web development, symbolic logic, database management and Japanese language. 
                         <br/><br/>
                         When I'm not coding, I enjoy binging shows, reading, and spending time with and friends and family. 
-                        I love
                     </p>
                 </div>
             </div>
