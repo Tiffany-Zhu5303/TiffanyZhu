@@ -6,6 +6,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata = {
   title: 'Tiffany Zhu',
   description: "Tiffany Zhu's personal web app",
+  icons: {
+    icon: '/icons/logo/Logo_background.svg',
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

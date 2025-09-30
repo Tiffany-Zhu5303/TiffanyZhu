@@ -29,7 +29,7 @@ export default function Experiences() {
           </div>
           <Link 
           href='/experiences/resume'
-          className='md:self-start flex items-center justify-between w-fit p-4 md:p-8 mt-4 ml-8 mb-8 bg-white/25 rounded-lg transition duration-700 transform hover: cursor-pointer hover:scale-105 shadow-md hover:shadow-lg transition-shadow duration-300 text-2xl md:text-4xl font-bold'>
+          className='flex items-center justify-between w-fit p-4 md:p-8 mt-4 ml-8 mb-8 bg-white/25 rounded-lg transition duration-700 transform hover: cursor-pointer hover:scale-105 shadow-md hover:shadow-lg transition-shadow duration-300 text-2xl md:text-4xl font-bold'>
             View Resume
           </Link>
         </div>
