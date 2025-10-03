@@ -108,7 +108,7 @@ const ProjectsList: Project[] = [
     },
     {
         title: 'WeatherWear',
-        shortDescription: 'Design and prototype of a mobile app that provides weather updates and alerts.',
+        shortDescription: 'Design and prototype of a mobile app that provides a digital wardrobe and weather updates.',
         longDescription: 'WeatherWear is a mobile app designed to provide users with a digital wardrobe coordinated with weather updates. The app allows users to plan outfits by uploading items from their wardrobe and receiving weather forecasts. With a focus on user experience, WeatherWear includes features such as intuitive drag and drop outfit planning, and a sleek, intuitive interface. This project aims to enhance users\' daily routines by combining fashion and functionality in a single app.',
         technologies: ['Figma', 'Swift', 'SwiftUI'],
         image: '/images/WeatherWear.png',
