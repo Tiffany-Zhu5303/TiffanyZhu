@@ -18,7 +18,7 @@ export type Project = {
   image: string;
   link: string;
   github: string;
-  collaborators: Collaborator[];
+  collaborators?: Collaborator[];
   carousel?: Carousel;
   tags: string[];
   projectroute: string;

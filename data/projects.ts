@@ -40,25 +40,6 @@ const ProjectsList: Project[] = [
         projectroute: '',
     },
     {
-        title: 'PetPals',
-        shortDescription: 'Design and prototype of a mobile app that connects pet owners with local pet owners.',
-        longDescription: 'PetPals is a mobile app designed to connect pet owners with local pet owners. The app allows users to create profiles for their pets, browse other pet profiles, and set up meetups for their pets. With a focus on safety and reliability, PetPals includes features such as private messaging, calendar integration for seamless scheduling, and map alerts for nearby pets. This project aims to foster a sense of community among pet owners and provide a convenient and trustworthy platform for pets and their owners to socialize.',
-        technologies: ['Figma'],
-        image: '/images/PetPals.png',
-        link: 'https://www.figma.com/design/24PdWS7GVrkC24GDOKz7yp/PetPals-Working-MVP?node-id=0-1&t=xI3UAa0YxlDeUQSO-1',
-        github: '',
-        collaborators: [
-            {
-                name: 'Ellen Avrumova'
-            },
-            {
-                name: 'Krina Patel'
-            }
-        ],
-        tags: ['UI/UX Design', 'Mobile'],
-        projectroute: '',
-    },
-    {
         title: 'Jeopardy With Friends',
         shortDescription: 'A real-time, multiplayer web application that recreates the classic Jeopardy trivia game for friends to play together online.',
         longDescription: 'An interactive and real-time multiplayer web application that recreates the classic Jeopardy trivia game. This app features a user-friendly interface, real-time updates, and a variety of trivia categories to choose from. Players can join games with friends, compete against each other, and test their knowledge in a fun and engaging way. In addition, this app is designed to be accessible and easy to use, making it perfect for trivia enthusiasts and casual players alike.',
@@ -105,7 +86,37 @@ const ProjectsList: Project[] = [
         },
         tags: ['Web', 'Full Stack'],
         projectroute: '',
-    }
+    },
+    {
+        title: 'PetPals',
+        shortDescription: 'Design and prototype of a mobile app that connects pet owners with local pet owners.',
+        longDescription: 'PetPals is a mobile app designed to connect pet owners with local pet owners. The app allows users to create profiles for their pets, browse other pet profiles, and set up meetups for their pets. With a focus on safety and reliability, PetPals includes features such as private messaging, calendar integration for seamless scheduling, and map alerts for nearby pets. This project aims to foster a sense of community among pet owners and provide a convenient and trustworthy platform for pets and their owners to socialize.',
+        technologies: ['Figma'],
+        image: '/images/PetPals.png',
+        link: 'https://www.figma.com/design/24PdWS7GVrkC24GDOKz7yp/PetPals-Working-MVP?node-id=0-1&t=xI3UAa0YxlDeUQSO-1',
+        github: '',
+        collaborators: [
+            {
+                name: 'Ellen Avrumova'
+            },
+            {
+                name: 'Krina Patel'
+            }
+        ],
+        tags: ['UI/UX Design', 'Mobile'],
+        projectroute: '',
+    },
+    {
+        title: 'WeatherWear',
+        shortDescription: 'Design and prototype of a mobile app that provides weather updates and alerts.',
+        longDescription: 'WeatherWear is a mobile app designed to provide users with a digital wardrobe coordinated with weather updates. The app allows users to plan outfits by uploading items from their wardrobe and receiving weather forecasts. With a focus on user experience, WeatherWear includes features such as intuitive drag and drop outfit planning, and a sleek, intuitive interface. This project aims to enhance users\' daily routines by combining fashion and functionality in a single app.',
+        technologies: ['Figma', 'Swift', 'SwiftUI'],
+        image: '/images/WeatherWear.png',
+        link: 'https://www.figma.com/design/FbQZXwlQ6WyaLuMVmKId0l/Weather-Wear?node-id=0-1&t=hLs34VUIC5gvT4nW-1',
+        github: 'https://github.com/Tiffany-Zhu5303/WeatherWear',
+        tags: ['UI/UX Design', 'Mobile'],
+        projectroute: '',
+    },
 ]
 
 ProjectsList.forEach(project => {

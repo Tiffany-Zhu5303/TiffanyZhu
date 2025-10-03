@@ -51,21 +51,24 @@ export default function ProjectCard({
                     </ul>
                 </div>
                 <div>
-                    <p className="text-lg font-bold pb-4">Collaborators:</p>
-                    <ul className="list-disc pl-5">
-                        {collaborators.map((collab, index) => (
-                            <li key={index} className="text-sm">
-                                {collab.link ? (
-                                    <a href={collab.link} target="_blank" rel="noopener noreferrer" className="text-wisteria hover:underline">
-                                        {collab.name}
-                                    </a>
-                                ) : (
-                                    collab.name
-                                )}
-                                {collab.role && ` (${collab.role})`}
-                            </li>
-                        ))}
-                    </ul>
+                    {collaborators && collaborators.length > 0 ? 
+                    (<>
+                        <p className="text-lg font-bold pb-4">Collaborators:</p>
+                        <ul className="list-disc pl-5">
+                            {collaborators.map((collab, index) => (
+                                <li key={index} className="text-sm">
+                                    {collab.link ? (
+                                        <a href={collab.link} target="_blank" rel="noopener noreferrer" className="text-wisteria hover:underline">
+                                            {collab.name}
+                                        </a>
+                                    ) : (
+                                        collab.name
+                                    )}
+                                    {collab.role && ` (${collab.role})`}
+                                </li>
+                            ))}
+                        </ul>
+                    </>) : null }
                 </div>
                 <div className="flex justify-center items-center">
                     {github ?

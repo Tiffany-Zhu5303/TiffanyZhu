@@ -1,9 +1,12 @@
 "use client";
 import Link from 'next/link';
-import { useState, useEffect, use } from 'react';
+// import { motion } from "motion/react"
+import { usePathname } from "next/navigation";
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,9 +24,9 @@ export default function Navbar() {
             <Link href="/"><img src="/icons/logo/Logo_transparent.png" alt="Logo" className='h-12 w-12'/></Link>
         </div>
         <div className="space-x-4 md:space-x-6 lg:space-x-12">
-            <Link href="/projects" className="hover:text-lavender-floral">Projects</Link>
-            <Link href="/experiences" className="hover:text-lavender-floral">Experiences</Link>
-            <Link href="/about" className="hover:text-lavender-floral">About</Link>
+            <Link href="/projects" className={`hover:text-lavender-floral ${pathname === '/projects' ? 'underline' : ''}`}>Projects</Link>
+            <Link href="/experiences" className={`hover:text-lavender-floral ${pathname === '/experiences' ? 'underline' : ''}`}>Experiences</Link>
+            <Link href="/about" className={`hover:text-lavender-floral ${pathname === '/about' ? 'underline' : ''}`}>About</Link>
         </div>
       </div>
     </nav>
