@@ -10,7 +10,7 @@ export default function Experiences() {
             {TechStackList.map((techStack, index) => (
               <div key={index} className='w-full flex flex-col items-center bg-white/25 rounded-lg p-10 transition duration-700 transform hover: cursor-pointer hover:scale-105 shadow-md hover:shadow-lg transition-shadow duration-300'>
                 <h2 className='text-xl md:text-2xl lg:text-4xl font-bold mb-4'>{techStack.name}</h2>
-                <div className={`grid ${techStack.technologies.length == 1 ? 'lg:grid-cols-1 place-items-center' : 'grid-cols-1 lg:grid-cols-2'} gap-4`}>
+                <div className={`grid ${techStack.technologies.length === 1 ? 'lg:grid-cols-1 place-items-center' : 'grid-cols-1 lg:grid-cols-2'} gap-4`}>
                   {techStack.technologies.map((tech, techIndex) => (
                     <div key={techIndex} className='flex items-center space-x-4 w-full p-4'>
                       <Image 

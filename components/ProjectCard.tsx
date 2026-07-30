@@ -1,4 +1,5 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "../components/ui/card"
+"use client";
+import { Card, CardHeader, CardTitle, CardDescription } from "../components/ui/card"
 import { Dialog, DialogContent, DialogTrigger } from "./ui/dialog";
 import Image from "next/image";
 import Link from "next/link";
