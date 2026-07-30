@@ -15,7 +15,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.511.0",
     "motion": "^12.23.22",
-    "next": "^15.3.3",
+    "next": "^16.2.12",
     "pdfjs-dist": "^4.10.38",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -31,28 +31,12 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^16.2.12",
     "@types/node": "^22.15.29",
     "@types/react": "^18.3.24",
     "@types/react-dom": "^18.3.7",
+    "@typescript-eslint/parser": "^8.65.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.36.0",
     "gh-pages": "^6.1.1",

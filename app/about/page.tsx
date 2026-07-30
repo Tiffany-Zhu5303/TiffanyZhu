@@ -5,7 +5,7 @@ export default function About() {
             <div className="flex flex-col md:flex-row justify-between items-between w-full p-4 m-4 md:mt-20">                
                 <Image 
                     src='/images/profile-pic-flowers.jpeg' 
-                    alt='Tiffany `&quot;`s profile picture'
+                    alt="Tiffany's profile picture"
                     width={500}
                     height={500} 
                     className='mx-auto border-2 w-5/6 h-5/6 md:w-2/3 md:h-2/3 rounded-full m-8 md:m-4 md:float-left'
