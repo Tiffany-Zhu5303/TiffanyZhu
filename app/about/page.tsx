@@ -20,7 +20,7 @@ export default function About() {
                         I graduated from CUNY Hunter college with a bachelor's degree in Computer Science and minor in mathematics and Japanese language. 
                         My favorite courses were web development, symbolic logic, database management and Japanese language. 
                         <br/><br/>
-                        When I'm not coding, I enjoy binging shows, reading, and spending time with and friends and family. 
+                        When I'm not coding, I enjoy binging shows, reading, and spending time with friends and family. 
                     </p>
                 </div>
             </div>
